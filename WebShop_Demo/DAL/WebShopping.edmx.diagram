@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8853dab65b3c41b7affca9157e44482c" Name="Diagram1">
+        <EntityTypeShape EntityType="WebDemoDBModel.Categories" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoDBModel.Customers" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoDBModel.Orders" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoDBModel.Products" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoDBModel.OrdersDetail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="WebDemoDBModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoDBModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoDBModel.FK_OrdersDetail_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoDBModel.FK_OrdersDetail_Products" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

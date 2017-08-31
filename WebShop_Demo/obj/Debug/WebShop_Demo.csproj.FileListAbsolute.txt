@@ -1,0 +1,73 @@
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\csc.exe
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\vbc.exe
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\VBCSCompiler.exe
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\WebShop_Demo.dll.config
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\WebShop_Demo.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\WebShop_Demo.pdb
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\EntityFramework.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\EntityFramework.SqlServer.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Helpers.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Mvc.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Razor.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Razor.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\EntityFramework.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\EntityFramework.SqlServer.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Razor.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Razor.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Helpers.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\bin\System.Web.Mvc.xml
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\obj\Debug\WebShop_Demo.dll
+C:\Users\mjimenez\documents\visual studio 2015\Projects\WebShop_Demo\WebShop_Demo\obj\Debug\WebShop_Demo.pdb
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\csc.exe
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\vbc.exe
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\VBCSCompiler.exe
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\WebShop_Demo.dll.config
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\WebShop_Demo.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\WebShop_Demo.pdb
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\EntityFramework.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\EntityFramework.SqlServer.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Helpers.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Mvc.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Razor.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Razor.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\EntityFramework.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\EntityFramework.SqlServer.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Razor.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Webpages.Razor.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Helpers.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\bin\System.Web.Mvc.xml
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\obj\Debug\WebShop_Demo.csprojResolveAssemblyReference.cache
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\obj\Debug\WebShop_Demo.dll
+C:\Users\mjimenez\Documents\MJ\WebShop_Demo\WebShop_Demo\obj\Debug\WebShop_Demo.pdb

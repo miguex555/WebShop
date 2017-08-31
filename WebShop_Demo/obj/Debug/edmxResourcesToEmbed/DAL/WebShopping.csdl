@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebDemoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MainPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MainAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Customers" FromRole="Customers" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderNumber" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" />
+    <Property Name="OrderNumber" Type="Int32" Nullable="false" />
+    <Property Name="OrderDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Orders_Customers" FromRole="Orders" ToRole="Customers" />
+    <NavigationProperty Name="OrdersDetail" Relationship="Self.FK_OrdersDetail_Orders" FromRole="Orders" ToRole="OrdersDetail" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
+    <NavigationProperty Name="OrdersDetail" Relationship="Self.FK_OrdersDetail_Products" FromRole="Products" ToRole="OrdersDetail" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="OrdersDetail">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="OrderNumber" />
+      <PropertyRef Name="ProductId" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="SalePrice" />
+    </Key>
+    <Property Name="RowId" Type="Int32" Nullable="false" />
+    <Property Name="OrderNumber" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="SalePrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_OrdersDetail_Orders" FromRole="OrdersDetail" ToRole="Orders" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_OrdersDetail_Products" FromRole="OrdersDetail" ToRole="Products" />
+  </EntityType>
+  <Association Name="FK_Products_Categories">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Customers">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrdersDetail_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrdersDetail" Type="Self.OrdersDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderNumber" />
+      </Principal>
+      <Dependent Role="OrdersDetail">
+        <PropertyRef Name="OrderNumber" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrdersDetail_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="OrdersDetail" Type="Self.OrdersDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="OrdersDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WebDemoDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Self.Categories" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="OrdersDetail" EntityType="Self.OrdersDetail" />
+    <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Customers" Association="Self.FK_Orders_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrdersDetail_Orders" Association="Self.FK_OrdersDetail_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrdersDetail" EntitySet="OrdersDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrdersDetail_Products" Association="Self.FK_OrdersDetail_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrdersDetail" EntitySet="OrdersDetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

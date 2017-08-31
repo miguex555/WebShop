@@ -1,0 +1,68 @@
+﻿@model WebShop_Demo.Models.Product
+
+@{
+    ViewBag.Title = "Products";
+}
+
+@using (Html.BeginForm("Products", "Products", FormMethod.Post))
+{
+    <h2>Products</h2>
+
+    <div>
+        Data from Memory @Html.CheckBoxFor(model => model.DataFromDB) 
+        <input type="submit" value="Reload"/>
+    </div>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+
+    <table class="table">
+        <tr>
+            <th>
+                Product Id
+            </th>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Active
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Category Name
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Active)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Categories.CategoryName)
+                </td>
+            </tr>
+        }
+
+    </table>
+}
